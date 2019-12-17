@@ -1,0 +1,105 @@
+body{
+	/*margin: 0;*/
+}
+header{
+	background: #0d8484;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+}
+.add{
+	border: 1px solid #666;
+	padding: 10px;
+	width: 8%;
+	max-width: 200px;
+	min-width: 100px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+.container{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #eee;
+	padding: 10px;
+}
+.task-ele {
+	overflow: hidden;
+	height: 48px;
+	border-bottom: 1px solid #333;
+}
+.task-ele p, .task-ele .opt{
+	float: left;
+	margin-top: 15px;
+	word-break: break-word;
+}
+.task-ele .opt{
+	margin-top: 10px;
+}
+.index{
+	width: 10%;
+}
+.name{
+	width: 25%;
+}
+.appid{
+	width: 20%;
+}
+.dev{
+	width: 15%;
+}
+.date{
+	width: 20%;
+}
+.opt{
+	width: 8%;
+	display: none;
+}
+.task-ele:hover .opt{
+	display: block;
+}
+.opt i{
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+.task-edit{
+	width: 80%;
+	border: 1px solid #aaa;
+	padding: 10px;
+	position: fixed;
+	left: 10%;
+	top: 100px;
+	background: #fff;
+	display: none;
+}
+.task-edit input{
+	width: 100%;
+	padding: 10px 0;
+	outline: none;
+}
+.task-edit .close{
+	position: absolute;
+	right: 8px;
+	top: 5px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.task-edit p{
+	margin: 5px 0;
+}
+
+.task-list{
+	min-height: 50px;
+}
+
+.task-list p{
+	position: relative;
+}
+
+.task-list p i{
+	position: absolute;
+	right: 0;
+}
