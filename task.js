@@ -29,12 +29,25 @@ function saveTask(){
 		date: date
 	}
 	if(editTaskIndex != null){
-		tasks[editTaskIndex].name = name;
-		tasks[editTaskIndex].appid = appid;
-		tasks[editTaskIndex].dev = dev;
-		tasks[editTaskIndex].date = date;
+		tasks[editTaskIndex] ={
+		index: editTaskIndex,
+		name: name,
+		appid: appid,
+		dev: dev,
+		date: date
+	     }
+// 		tasks[editTaskIndex].name = name;
+// 		tasks[editTaskIndex].appid = appid;
+// 		tasks[editTaskIndex].dev = dev;
+// 		tasks[editTaskIndex].date = date;
 	}else{
-		tasks.push(task);
+		tasks.push({
+		index: index,
+		name: name,
+		appid: appid,
+		dev: dev,
+		date: date
+	     });
 	}
 	editTaskIndex = null;
 	save();
